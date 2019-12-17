@@ -1,0 +1,3 @@
+- perform mvn clean install before getting /actuator/info 
+- with admin user (tom/8888) we can see all extra metrics in actuator/health
+- path for custom metric - actuator/metrics/counter.good.delivered
