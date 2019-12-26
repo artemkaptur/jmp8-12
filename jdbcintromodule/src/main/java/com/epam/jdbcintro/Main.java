@@ -1,6 +1,7 @@
 package com.epam.jdbcintro;
 
 import com.epam.jdbcintro.task1.MyFirstConnection;
+import com.epam.jdbcintro.task3.DataGenerator;
 
 public class Main {
 
@@ -14,6 +15,12 @@ public class Main {
         firstConnection.printTables();
         firstConnection.executePreparedStatement("INSERT INTO task1 VALUES (default, ?)", "Billie");
         firstConnection.printData();
+
+        // Task 3:
+        DataGenerator dataGenerator = new DataGenerator();
+        dataGenerator.createTables();
+        dataGenerator.fillTables();
+        dataGenerator.printUsers();
     }
 
 }
